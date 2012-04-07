@@ -1,33 +1,33 @@
 ﻿namespace MOTHER3Funland
 {
-	partial class frmSpriteEditor
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frmSpriteEditor
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.cboBank = new System.Windows.Forms.ComboBox();
             this.cboChar = new System.Windows.Forms.ComboBox();
@@ -425,41 +425,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.pOam)).EndInit();
             this.ResumeLayout(false);
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.ComboBox cboBank;
-		private System.Windows.Forms.ComboBox cboChar;
-		private System.Windows.Forms.ComboBox cboSprite;
-		private System.Windows.Forms.PictureBox pSprite;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TrackBar tbZoom;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Panel panelSprite;
-		private System.Windows.Forms.TextBox txtSearch;
-		private System.Windows.Forms.Button btnExport;
-		private System.Windows.Forms.Button btnImport;
-		private System.Windows.Forms.OpenFileDialog dlgOpen;
-		private System.Windows.Forms.SaveFileDialog dlgSave;
-		private System.Windows.Forms.Button btnApply;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.ComboBox cboPalNum;
-		private System.Windows.Forms.ToolTip ttMain;
-		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.ComboBox cboOam;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox txtOamY;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox txtOamX;
-		private System.Windows.Forms.CheckBox chkFlipV;
-		private System.Windows.Forms.CheckBox chkFlipH;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.PictureBox pOam;
-	}
+        private System.Windows.Forms.ComboBox cboBank;
+        private System.Windows.Forms.ComboBox cboChar;
+        private System.Windows.Forms.ComboBox cboSprite;
+        private System.Windows.Forms.PictureBox pSprite;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TrackBar tbZoom;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelSprite;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.OpenFileDialog dlgOpen;
+        private System.Windows.Forms.SaveFileDialog dlgSave;
+        private System.Windows.Forms.Button btnApply;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboPalNum;
+        private System.Windows.Forms.ToolTip ttMain;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cboOam;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtOamY;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtOamX;
+        private System.Windows.Forms.CheckBox chkFlipV;
+        private System.Windows.Forms.CheckBox chkFlipH;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pOam;
+    }
 }
