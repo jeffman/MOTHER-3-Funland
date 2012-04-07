@@ -1,0 +1,1000 @@
+(EMPTY) (1)
+Flint (1)
+Flint (2)
+Lucas (1)
+Lucas (2)
+Claus (1)
+Claus (2)
+Claus (3)
+Hinawa
+Boney (1)
+Boney (2)
+Kumatora (1)
+Kumatora (2)
+Kumatora (3)
+Wess (1)
+Duster (1)
+Duster (2)
+Fassad (1)
+Salsa (1)
+Samba
+Pusher
+Elmore
+Ollie (1)
+Ollie (2)
+Sebastian
+Mapson
+Jackie (1)
+Jackie (2)
+Betsy
+Tessie
+Bateau
+Thomas (1)
+Thomas (2)
+Thomas (3)
+Lisa
+Mike (1)
+Mike (2)
+Salsa (2)
+Reggie
+Bronson (1)
+Bronson (2)
+Caroline
+Angie (1)
+Angie (2)
+Abbot (1)
+Abbot (2)
+Abbey
+Matt (1)
+Matt (2)
+Butch (1)
+Butch (2)
+Biff (1)
+Biff (2)
+Jill
+Jonel (1)
+Jonel (2)
+Brenda
+Bob (1)
+Bob (2)
+Dona
+Lucas (3)
+Paul (1)
+Paul (2)
+Linda
+Nana (1)
+Nana (2)
+Richie (1)
+Richie (2)
+Nichol (1)
+Nichol (2)
+Boney (3)
+Lucas (4)
+Nippolyte
+Porky (Unused)
+Isaac (1)
+Isaac (2)
+Bud (1)
+Bud (2)
+Lou (1)
+Lou (2)
+Scamp
+Ed
+Nan
+Alle (1)
+Alle (2)
+Lighter (1)
+Fuel (1)
+Fuel (2)
+Alec (1)
+Pigmask (1)
+Pigmask (2)
+Pigmask (3)
+Clayman (1)
+Mr. Saturn (1)
+Parrot
+Skinhead
+Neckbeard
+Guy (1)
+Dr. Andonuts
+Attendant
+Duster (DCMC)
+Fish (1)
+Fish (2)
+Hermit Crab
+Lady (1)
+M.Butterfly
+Sheep (1)
+Cow (1)
+Pig
+Chicken
+Dove
+OJ
+Shimmy Zmizz
+Baccio
+Magic (1)
+Drago Pup (1)
+Ionia (1)
+Doria
+Phrygia
+Lydia
+Mixolydia (1)
+Aeolia
+Boney (head w/ cap)
+Pork Bean
+Pork Tank
+Girl
+Researcher (1)
+Gift Box (glitchy)
+Mole Cricket (shop)
+Frog (1)
+Lighter (2)
+Lumber
+Porky-Bot
+Man (1)
+Frog (2)
+Bonfire (1)
+Guy (2)
+Boney (DCMC)
+Guy (3)
+Cow (2)
+Clayman (2)
+Lucas (Commander)
+Leo-Leo
+Pigmask?(4)
+Masked Man
+Pigmask (5)
+Drago Pup (2)
+Mole Cricket (2)
+Elder Cricket
+Duster (pigmask)
+Kumatora (pigmask)
+Arrow Lizard
+O2 Machine (1)
+Lucas (PJ's)
+Man (2)
+Woman (1)
+Hot Spring Lady (2)
+Alec (head)
+Ionia (head)
+Flint (burnt)
+Fuel (burnt)
+Leder (1)
+Refrigerator
+Stray Dog (1)
+Stray Dog (2)
+Item Guy (1)
+Shadow (glitchy)
+Sparrow
+Sat.Fisher
+Hot Spring Old Man
+Ocho (1)
+Man (3)
+Woman (2)
+Knock! (1)
+Knock! (2)
+Bow (1)
+Bow (2)
+Guy (4)
+Lady (3)
+Flint (charred)
+Fuel (charred)
+Flint (charred head)
+Fuel (charred head)
+Old Guy (1)
+Policeman
+Mr. Saturn (ladder)
+Sparks (?)
+Arrows (Salsa dance)
+Objects (various)
+Doorknob
+Apple
+Lumber (2)
+Empty
+Magic (2)
+Pork Bomb
+Glitchy (1)
+Hmm...
+?
+Pork Saucer
+Construction Guy
+Interpreter
+Pig Book
+Flowers
+Frog (3)
+Large shadow
+Clothesline
+Bucket Bros
+Claus's Shoe
+Mr.Saturn (2)
+Pendant
+Pork Vending Machine
+Noble Spitoon
+Large shadow + "HAPPY END"
+Happy box "in box"
+Monkey zapper
+Clayman (3)
+Frog (4)
+Frog (5)
+Sheep (2)
+Net
+Banana
+Ionia (tied up)
+Flying birdcage
+(EMPTY) (2)
+Rock-paper-scissors
+Pigmask (6)
+Sparkles
+Pigmask (7)
+Map
+Man (4)
+Mole
+Sheep (2)
+Blue giftbox (glitchy)
+Sheep (3)
+CpnExchang
+Guy (5)
+Guy (6)
+Boney (water)
+Bird
+Man (4)
+Frog (6)
+Lucas (pigmask)
+Boney (pigmask)
+Lucas (water)
+Flint (water)
+Guy (7)
+Duster (water)
+Pigmask helmet
+Milk bottle (glitchy)
+Pigmask (water)
+Kumatora (water)
+Wess (water)
+Salsa (water)
+Fassad (water)
+Exclamation sprites (glitchy)
+Thomas (water)
+DUMMY (1)
+Reconstructed Caribou
+Mr. Passion
+Blue shadow
+Clayman (4)
+Mecha Drago
+Blank square
+Mr. Genetor
+White dot
+Ultimate Chimera
+Bright Smile
+Porky (1)
+NK Cyborg
+Word on the Wind
+Pork Trooper (1)
+Pork Trooper (2)
+Jealous Bass
+DUMMY (2)
+Slimy Slug
+DUMMY (3)
+Porky Statue
+Hippo Launcher
+DUMMY (4)
+DUMMY (5)
+Lord Passion
+Tender Loving Tree
+DUMMY (6)
+DUMMY (7)
+DUMMY (8)
+DUMMY (9)
+DUMMY (10)
+Fenomeno
+Rhinocerocket Mark II
+FrightBot
+The Squeekz
+FireFly	
+Mecha-Lion
+Road Block	
+Scamperin' Mushroom
+Squawking Boomstick
+Top Dogfish
+Mr.Batty
+Greedy Mouse
+Firefly (2)
+Yammonster
+Flying Mouse
+DUMMY (11)
+Agitated Boar
+Mighty Bitey Snake
+Soot Dumpling
+Baked Yammonster
+Walking Bushie
+The medusa enemy
+Carefree Jellyfish
+Crag Lizard
+Spud Bug
+Ten-Yeti
+Chilly Dog
+Big Spud Bug
+Minerali
+Ramblin' Evil Mushroom
+DUMMY (12)
+Boa Transistor
+Mischievous Mole
+Mecha-Mole!
+Balding Eagle
+Tree
+Titany
+Glitchy (2)
+Mrs.Lava
+Magman
+Zombie Boy
+Zombie Dog
+Lingering Spirit
+Mobile Grave
+Detached Leech
+Spineless Lobster
+HUGE Pillbug
+Cheery Skeleton
+Big Bro
+Barrel Man
+Strawberry Slime
+Arachnid!
+Wan Sum Dung
+Barrier Man
+Ghost Armor (armor only)
+Ghost Sword
+Ghost Shield
+Ghost Armor (With Sword and Shield)
+Osohe Cape
+Rockin' Ghost
+Pseudoor
+DUMMY (13)
+Dung Beetle
+Great Antlion
+Sara-Sara-Sahara
+Sand Lizard
+Cactus Wolf
+Gooey Goo
+Cleocatra
+Little Bro
+Zombishroom
+Ghost Sprites
+Artsy Ghost
+Horsantula
+Pigtunia
+Squawking Stick
+Putrid Moldyman
+Slitherhen
+Whatever
+Dogfish
+Cattlesnake
+Einswine
+Mantis
+Ancient Dragonfly
+Violent Roach
+Muttshroom
+Mecha-Turtle
+Bro Team
+Batangutan
+Ostrelephant
+Sky Titany
+Monkalrus
+Parental Kangashark
+Li'l Miss Marshmallow
+Almost Mecha Lion
+Rhinocerocket
+Wound-Up Road Hog
+Metal Attack Roach
+Really Flying Mouse
+Short Circuit Zap!
+Minor Robo
+Love Walker
+DUMMY (14)
+Atomic Power Robot
+Nuclear Reactor Robot
+Negative Man
+Heavyhead
+Nice Poser
+Big Spud Bug
+Grated Yammonster
+Hippo Launcher (closed)
+Steel Mecho-Rilla
+Zombidillo
+Fish Roe Man
+DUMMY (15)
+Return of Octobot
+Carpet Monster
+Security Robo
+Pigmask (8)
+Zombie Lady (enemy)
+Naughty Mushroom
+Elder Batty
+Arachnid!!!
+Greedier Mouse
+Gently Weeping Guitar
+Beaten Drum
+Reconstructed Mole
+Mecha-Lion
+Wobbly Robot
+Men's Toilet Room Sign
+Scrapped Robo
+Forlorn Junk Heap
+Surprise Box
+Battery man
+Screwloose
+Cuddle Bomb
+K9000
+Alkaline Man (Unused)
+DUMMY (16)
+Pigmask (8)
+Pigmask (9)
+Pigmask (10)
+Pigmask (11)
+Master Eddy
+Rock Lobster
+Rooound Fish
+Blue Balding Eagle
+Surveillance Mech
+Unwelcome Gust
+Red-caped NPC
+Black-caped NPC
+Titanian
+Upgraded Robo
+Beanling
+Beanling Recolor
+DUMMY (17)
+DUMMY (18)
+DUMMY (19)
+DUMMY (20)
+DUMMY (21)
+DUMMY (22)
+Dung
+Frog (7)
+Frog (8)
+Hermit crab, w/out shell
+Thunder Fish
+Shimmy Zmizz
+Magic
+Duster (3)
+DCMC Keyboard
+OJ
+DUMMY (23)
+Bug
+Item Guy's tent (Unused)
+Snow Bun
+Clayman (5)
+Sauna Smoke
+DUMMY (24)
+DUMMY (25)
+Table
+Pile of Leaves
+Blue sauna smoke
+A red awning?
+Drago (1)
+Pork Trooper (3)
+Green Train
+Pump Chimera
+Slot Brother
+ChupiChupyoi wines unfrozen
+Pork Saucer Ladder
+Fire (1)
+Red Flag
+Ropeway Train
+Pulled Needle
+Log on fire
+Fire (2)
+Fire (3)
+Clayman (6)
+BOM!
+Smoke
+Duster (4)
+Rotating wood piece?
+Bookshelf
+Ch.1 Fireflies
+Hinawa's Cloth
+Thunder Fish
+Magic Broom
+Fish
+Lightning
+Red Train
+Sign Post
+Night Sign Post
+Pump Chimera water
+Creepy painting
+Friendly Ghosts
+Duster (5) (TrashCan?)
+Osohe Statue
+Hummingbird Egg
+Duster (6)
+Rockin' Ghost (2) (Glitchy)
+Candle Holder
+Friendly Mice
+Instant Revitalizing Machine
+Beam???
+Invisible ghost actions
+Rope Snake
+Stinkbug?
+Dump Truck
+Smoke
+Aeolia Disappearing
+Doria Disappearing
+Dryer Chimera
+Osohe Castle diagrams
+DCMC Billboard
+Glitchied Rock
+Window
+Rock disintegrating
+Pusher's car
+Drago (2)
+White/Blue Puddle
+Window view??
+Blue Pork Heli
+Osohe Stuff
+Lydia Disappearing
+Mixolydia Disappearing
+Ghost of Hinawa
+Drago (3)
+Absolutely Safe Capsule (Glitchied)
+Lightning
+Light Brown Mouse
+Dr.Andonuts in Trash Can
+Osohe (EndGame)
+Pork Heli (EndGame)
+Meteorite
+Explosion
+3 years later, Tazmily Village ~
+Crashing Pork Heli (1)
+Rocks being crushed
+Porky (2)
+Blue explosion
+Crashing Pork Heli (2)
+Meteorite (EndGame)
+Blue Vapors (C. of the Past)
+Purple Vapors (C. of the Past)
+Room
+Lab-like interior
+Night-time Lab-like interior
+Alec's house
+Inside of a Magypsy's house
+Grave
+Phrygia disappearing
+White boxes
+Pencil/Octopus Statue 
+Caribou
+Ionia Disappearing
+Dryer Chimera "Dry"
+Energizing Mushrooms
+Tazmily Bridge
+Pink Camper Car
+Mr. Saturn Tea Table
+Tea table w/ Lucas, Kumatora, and Boney
+Tea table w/ Lucas and Boney
+Boat from EB Room
+Minigame PorkyBot
+False Shark and Alligator
+Wagon
+Pump w/ balloon
+DCMC Drum Set
+Purple Smoke
+Fire Geyser
+Fireworks
+Police Car
+Pink Car
+Mice Table
+Mother 3 End Logo
+2/3 of Earth Symbol
+Last 1/3 of Earth Symbol
+Men's Room
+Aeolia in Chair
+Glitchy (4)
+Glitchy (5)
+Glitchy (6)
+Glitchy (7)
+Glitchy (8)
+Glitchy (9)
+Glitchy (10)
+Glitchy (11)
+Glitchy (12)
+Glitchy (13)
+Glitchy (14)
+Glitchy (15)
+Glitchy (16)
+Glitchy (17)
+Glitchy (18)
+Glitchy (19)
+Glitchy (20)
+Glitchy (21)
+Glitchy (22)
+Glitchy (23)
+Glitchy (24)
+Glitchy (25)
+Glitchy (26)
+Glitchy (27)
+Glitchy (28)
+Glitchy (29)
+Glitchy (30)
+Glitchy (31)
+Glitchy (32)
+Glitchy (33)
+Glitchy (34)
+Glitchy (35)
+Glitchy (36)
+Glitchy (37)
+Tazmily Boat
+Pigmask (12)
+Girl w/ Flowing red Hair
+Factory NPC
+Rolling Rock (1) (Glitchy)
+Rolling Rock (2) (Glitchy)
+Bikini NPC
+Porky Fans (1)
+Porky Fans (2)
+Porky Fans (3)
+Hat NPC
+Chauffeur (1)
+Chauffeur (2)
+Wrecking Ball
+Wig NPC
+Frog (9)
+Frog (10)
+Horse O2 Machine
+(EMPTY) (3)
+(EMPTY) (4)
+Gift box (3) (Finally not glitchy)
+Lardna-Bot
+Black Worker (Unused Fire scene NPC?) 
+Factory NPC
+Lady NPC
+Old Lady NPC
+Indice Guy (Glitchy)
+Pigmask (Water) (2)
+Researcher (2)
+Lucas (5)
+Flint (3)
+(EMPTY) (5)
+(EMPTY) (6)
+Mr.T
+Blonde Chick
+Black haired Chick
+(EMPTY) (5)
+Geeky NPC
+Zombie Chick NPC
+Rapper NPC
+Grey Box
+Beard NPC
+Highway Robot
+Mr.Saturn (3)
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+Lucas (6)
+Lucas (7)
+Salsa (3)
+Duster (7)
+Flint (4)
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one
+No one

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A36696B-1AD6-4E48-BCB9-9328C1D95BA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MOTHER3Funland</RootNamespace>
+    <AssemblyName>MOTHER 3 Funland</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>funlandbig.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionTable.cs" />
+    <Compile Include="ArrangementEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArrangementEditor.Designer.cs">
+      <DependentUpon>ArrangementEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboSearch.Designer.cs">
+      <DependentUpon>ComboSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnemyData.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="frmBattleBgEntryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattleBgEntryEditor.Designer.cs">
+      <DependentUpon>frmBattleBgEntryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattleBgLayerEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattleBgLayerEditor.Designer.cs">
+      <DependentUpon>frmBattleBgLayerEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattleSwirlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattleSwirlEditor.Designer.cs">
+      <DependentUpon>frmBattleSwirlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharNamesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCharNamesEditor.Designer.cs">
+      <DependentUpon>frmCharNamesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompression.Designer.cs">
+      <DependentUpon>frmCompression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDontCareNamesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDontCareNamesEditor.Designer.cs">
+      <DependentUpon>frmDontCareNamesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnemyEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnemyEditor.Designer.cs">
+      <DependentUpon>frmEnemyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGfxImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGfxImportDialog.Designer.cs">
+      <DependentUpon>frmGfxImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemEditor.Designer.cs">
+      <DependentUpon>frmItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevelExpEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevelExpEditor.Designer.cs">
+      <DependentUpon>frmLevelExpEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevelPsiEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevelPsiEditor.Designer.cs">
+      <DependentUpon>frmLevelPsiEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainTextViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainTextViewer.Designer.cs">
+      <DependentUpon>frmMainTextViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapViewer.Designer.cs">
+      <DependentUpon>frmMapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPsiEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPsiEditor.Designer.cs">
+      <DependentUpon>frmPsiEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShopEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShopEditor.Designer.cs">
+      <DependentUpon>frmShopEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpriteEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpriteEditor.Designer.cs">
+      <DependentUpon>frmSpriteEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTownMapEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTownMapEditor.Designer.cs">
+      <DependentUpon>frmTownMapEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicsProvider.cs" />
+    <Compile Include="ItemData.cs" />
+    <Compile Include="LevelExpData.cs" />
+    <Compile Include="LevelPsiData.cs" />
+    <Compile Include="LZ77.cs" />
+    <Compile Include="M3CC.cs" />
+    <Compile Include="M3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M3Rom.cs" />
+    <Compile Include="M3Settings.cs" />
+    <Compile Include="MapData.cs" />
+    <Compile Include="ModuleArbiter.cs" />
+    <Compile Include="MPalette.cs" />
+    <Compile Include="MusicTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PsiData.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="ShopData.cs" />
+    <Compile Include="SpriteData.cs" />
+    <Compile Include="TextProvider.cs" />
+    <Compile Include="PalSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PalSelector.Designer.cs">
+      <DependentUpon>PalSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs" />
+    <Compile Include="UserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="ArrangementEditor.resx">
+      <DependentUpon>ArrangementEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboSearch.resx">
+      <DependentUpon>ComboSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattleBgEntryEditor.resx">
+      <DependentUpon>frmBattleBgEntryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattleBgLayerEditor.resx">
+      <DependentUpon>frmBattleBgLayerEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattleSwirlEditor.resx">
+      <DependentUpon>frmBattleSwirlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCharNamesEditor.resx">
+      <DependentUpon>frmCharNamesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompression.resx">
+      <DependentUpon>frmCompression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDontCareNamesEditor.resx">
+      <DependentUpon>frmDontCareNamesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnemyEditor.resx">
+      <DependentUpon>frmEnemyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGfxImportDialog.resx">
+      <DependentUpon>frmGfxImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemEditor.resx">
+      <DependentUpon>frmItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevelExpEditor.resx">
+      <DependentUpon>frmLevelExpEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevelPsiEditor.resx">
+      <DependentUpon>frmLevelPsiEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainTextViewer.resx">
+      <DependentUpon>frmMainTextViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapViewer.resx">
+      <DependentUpon>frmMapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPsiEditor.resx">
+      <DependentUpon>frmPsiEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShopEditor.resx">
+      <DependentUpon>frmShopEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpriteEditor.resx">
+      <DependentUpon>frmSpriteEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTownMapEditor.resx">
+      <DependentUpon>frmTownMapEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PalSelector.resx">
+      <DependentUpon>PalSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bg.png" />
+    <None Include="Resources\salsa.png" />
+    <None Include="Resources\townmapnames.txt" />
+    <None Include="Resources\swirl.png" />
+    <None Include="Resources\bg2.png" />
+    <Content Include="Resources\blue-document-copy.png" />
+    <None Include="Resources\claushead.png" />
+    <None Include="Resources\guy.png" />
+    <Content Include="Resources\map.png" />
+    <None Include="Resources\spritenames.txt" />
+    <None Include="Resources\psianimations.txt" />
+    <None Include="Resources\psitargets.txt" />
+    <None Include="Resources\butterfly.png" />
+    <Content Include="funland.ico" />
+    <Content Include="funlandbig.ico" />
+    <None Include="Resources\ioniahead.png" />
+    <None Include="Resources\sparrow.png" />
+    <None Include="Resources\vending.png" />
+    <None Include="Resources\thunderbomb.png" />
+    <None Include="Resources\slug.png" />
+    <None Include="Resources\lucashead.png" />
+    <None Include="Resources\shopnames.txt" />
+    <None Include="Resources\equippernames.txt" />
+    <None Include="Resources\itemtypes.txt" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\weaknesses.txt" />
+    <None Include="Resources\folder-open-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

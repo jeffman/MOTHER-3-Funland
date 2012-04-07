@@ -1,0 +1,10 @@
+Weapon
+Body armor
+Headgear
+Armgear
+Food
+Status healer
+Battle item
+Battle/key item?
+Accessory
+Memory snake?

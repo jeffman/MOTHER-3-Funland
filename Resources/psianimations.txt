@@ -1,0 +1,63 @@
+﻿(none)
+Bash thing
+Smaaash
+Empty?
+Empty?
+PK Love α
+PK Love β
+PK Love γ
+PK Love Ω
+PK Fire α
+PK Fire β
+PK Fire γ
+PK Fire Ω
+PK Freeze α
+PK Freeze β
+PK Freeze γ
+PK Freeze Ω
+PK Thunder
+PK Thunder (no lightning)
+PK Thunder 2
+PK Thunder 2 (no lightning)
+PK Flash
+PK Starstorm
+PK Ground
+Empty?
+Lifeup (enemy)
+Lifeup α
+Lifeup β
+Lifeup γ/Ω
+Healing (enemy)
+Healing α
+Healing β
+Healing γ/Ω
+Refresh
+Refresh?
+Empty?
+Brainshock α
+Brainshock Ω
+Paralysis α
+Paralysis Ω
+Hypnosis α
+Hypnosis Ω
+Offense down α/Ω
+Defense down α/Ω
+Magnet α (enemy)
+Magnet α
+Magnet Ω (enemy)
+Magnet Ω
+Empty?
+Shield α/Ω
+Shield (enemy)
+Shield reflect
+Counter α/Ω
+Counter (enemy)
+Counter reflect
+PSI shield α/Ω
+PSI shield (enemy)
+PSI shield reflect
+PSI counter α/Ω
+PSI counter (enemy)
+PSI counter reflect
+Offense up α/Ω
+Defense up α/Ω
