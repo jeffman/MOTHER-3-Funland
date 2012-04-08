@@ -18,7 +18,7 @@ namespace MOTHER3
         public bool KeyItem;
         public ushort Sell;
         public byte EquipOwner;
-		public int Hp;
+        public int Hp;
         public short Pp;
         public sbyte Off;
         public sbyte Def;
@@ -41,7 +41,7 @@ namespace MOTHER3
         //        0x20: Boney
         //        0x40: Salsa
         //        0x80: ?
-		// +0x10: HP
+        // +0x10: HP
         // +0x14: PP
         // +0x18: Offense
         // +0x19: Defense
@@ -92,7 +92,7 @@ namespace MOTHER3
 
                 Rom.SeekAdd(3);
 
-				id.Hp = Rom.ReadInt();
+                id.Hp = Rom.ReadInt();
                 id.Pp = Rom.ReadShort();
 
                 Rom.SeekAdd(2);
@@ -140,7 +140,7 @@ namespace MOTHER3
 
             Rom.SeekAdd(7);
 
-			Rom.WriteInt(this.Hp);
+            Rom.WriteInt(this.Hp);
             Rom.WriteShort(this.Pp);
 
             Rom.SeekAdd(2);

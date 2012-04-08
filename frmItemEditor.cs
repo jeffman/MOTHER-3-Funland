@@ -163,7 +163,7 @@ namespace MOTHER3Funland
 
             txtName.Text = itemNames[index];
             txtSell.Text = id.Sell.ToString();
-			txtHp.Text = id.Hp.ToString();
+            txtHp.Text = id.Hp.ToString();
             txtPp.Text = id.Pp.ToString();
             txtOff.Text = id.Off.ToString();
             txtDef.Text = id.Def.ToString();
@@ -219,16 +219,16 @@ namespace MOTHER3Funland
                 return;
             }
             
-			// HP
-			try
-			{
-				id.Hp = int.Parse(txtHp.Text);
-			}
-			catch
-			{
-				HighlightControl(txtHp);
-				return;
-			}
+            // HP
+            try
+            {
+                id.Hp = int.Parse(txtHp.Text);
+            }
+            catch
+            {
+                HighlightControl(txtHp);
+                return;
+            }
 
             // PP
             try
