@@ -639,7 +639,8 @@ namespace MOTHER3
             Bitmap ret = new Bitmap(24, 24, PixelFormat.Format8bppIndexed);
 
             ColorPalette cp = ret.Palette;
-            for (int i = 0; i < 16; i++)
+			cp.Entries[0] = Color.Transparent;
+            for (int i = 1; i < 16; i++)
                 cp.Entries[i] = palette.Entries[0][i];
             ret.Palette = cp;
 

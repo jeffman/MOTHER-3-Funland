@@ -98,7 +98,7 @@ namespace MOTHER3Funland
                 cb.AutoSize = true;
                 cb.Text = equippers[i] + " can equip";
                 cb.Left = lblItemType.Left + 5;
-                cb.Top = lblPp.Top + (i * 26);
+                cb.Top = lblHp.Top + (i * 26);
 
                 tabBasic.Controls.Add(cb);
                 chkEquip[i] = cb;
@@ -163,6 +163,7 @@ namespace MOTHER3Funland
 
             txtName.Text = itemNames[index];
             txtSell.Text = id.Sell.ToString();
+			txtHp.Text = id.Hp.ToString();
             txtPp.Text = id.Pp.ToString();
             txtOff.Text = id.Off.ToString();
             txtDef.Text = id.Def.ToString();
@@ -218,10 +219,21 @@ namespace MOTHER3Funland
                 return;
             }
             
+			// HP
+			try
+			{
+				id.Hp = int.Parse(txtHp.Text);
+			}
+			catch
+			{
+				HighlightControl(txtHp);
+				return;
+			}
+
             // PP
             try
             {
-                id.Pp = ushort.Parse(txtPp.Text);
+                id.Pp = short.Parse(txtPp.Text);
             }
             catch
             {
@@ -232,7 +244,7 @@ namespace MOTHER3Funland
             // Offense
             try
             {
-                id.Off = byte.Parse(txtOff.Text);
+                id.Off = sbyte.Parse(txtOff.Text);
             }
             catch
             {
@@ -243,7 +255,7 @@ namespace MOTHER3Funland
             // Defese
             try
             {
-                id.Def = byte.Parse(txtDef.Text);
+                id.Def = sbyte.Parse(txtDef.Text);
             }
             catch
             {
@@ -254,7 +266,7 @@ namespace MOTHER3Funland
             // IQ
             try
             {
-                id.Iq = byte.Parse(txtIq.Text);
+                id.Iq = sbyte.Parse(txtIq.Text);
             }
             catch
             {
@@ -265,7 +277,7 @@ namespace MOTHER3Funland
             // Speed
             try
             {
-                id.Speed = byte.Parse(txtSpeed.Text);
+                id.Speed = sbyte.Parse(txtSpeed.Text);
             }
             catch
             {

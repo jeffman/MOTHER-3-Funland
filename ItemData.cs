@@ -18,11 +18,12 @@ namespace MOTHER3
         public bool KeyItem;
         public ushort Sell;
         public byte EquipOwner;
-        public ushort Pp;
-        public byte Off;
-        public byte Def;
-        public byte Iq;
-        public byte Speed;
+		public int Hp;
+        public short Pp;
+        public sbyte Off;
+        public sbyte Def;
+        public sbyte Iq;
+        public sbyte Speed;
         public short[] ProtectionAilment = new short[11];
         public sbyte[] ProtectionPsi = new sbyte[5];
         public ushort Hp1;
@@ -40,10 +41,11 @@ namespace MOTHER3
         //        0x20: Boney
         //        0x40: Salsa
         //        0x80: ?
+		// +0x10: HP
         // +0x14: PP
         // +0x18: Offense
         // +0x19: Defense
-        // +0x1A: IQ?
+        // +0x1A: IQ
         // +0x1B: Speed
         // +0x20 to +0x35 [2*11]: Status ailment protection?
         //        #0: Poison
@@ -88,16 +90,17 @@ namespace MOTHER3
                 id.Sell = Rom.ReadUShort();
                 id.EquipOwner = Rom.ReadByte();
 
-                Rom.SeekAdd(7);
+                Rom.SeekAdd(3);
 
-                id.Pp = Rom.ReadUShort();
+				id.Hp = Rom.ReadInt();
+                id.Pp = Rom.ReadShort();
 
                 Rom.SeekAdd(2);
 
-                id.Off = Rom.ReadByte();
-                id.Def = Rom.ReadByte();
-                id.Iq = Rom.ReadByte();
-                id.Speed = Rom.ReadByte();
+                id.Off = Rom.ReadSByte();
+                id.Def = Rom.ReadSByte();
+                id.Iq = Rom.ReadSByte();
+                id.Speed = Rom.ReadSByte();
 
                 Rom.SeekAdd(4);
 
@@ -137,14 +140,15 @@ namespace MOTHER3
 
             Rom.SeekAdd(7);
 
-            Rom.WriteUShort(this.Pp);
+			Rom.WriteInt(this.Hp);
+            Rom.WriteShort(this.Pp);
 
             Rom.SeekAdd(2);
 
-            Rom.WriteByte(this.Off);
-            Rom.WriteByte(this.Def);
-            Rom.WriteByte(this.Iq);
-            Rom.WriteByte(this.Speed);
+            Rom.WriteSByte(this.Off);
+            Rom.WriteSByte(this.Def);
+            Rom.WriteSByte(this.Iq);
+            Rom.WriteSByte(this.Speed);
 
             Rom.SeekAdd(4);
 
