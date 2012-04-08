@@ -252,7 +252,7 @@ namespace MOTHER3Funland
                 return;
             }
 
-            // Defese
+            // Defense
             try
             {
                 id.Def = sbyte.Parse(txtDef.Text);

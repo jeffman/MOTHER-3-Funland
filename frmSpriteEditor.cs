@@ -184,7 +184,7 @@ namespace MOTHER3Funland
                 var palette = SpritePalettes.GetPalette(sprite);
 
                 // Create the target bitmap
-                Bitmap target = new Bitmap(Math.Max(128, bmp.Width), 32 + bmp.Height, PixelFormat.Format8bppIndexed);
+                Bitmap target = new Bitmap(Math.Max(128, bmp.Width), 32 + bmp.Height, PixelFormat.Format32bppArgb);
                 Graphics g = Graphics.FromImage(target);
 
                 // Draw the palette

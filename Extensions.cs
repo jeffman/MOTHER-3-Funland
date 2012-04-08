@@ -571,7 +571,7 @@ namespace Extensions
 
         public unsafe static Bitmap ToRaster(this Bitmap bmp)
         {
-            var ret = new Bitmap(256, 256, PixelFormat.Format32bppArgb);
+            var ret = new Bitmap(bmp.Width, bmp.Height, PixelFormat.Format32bppArgb);
             Graphics g = Graphics.FromImage(ret);
             g.DrawImage(bmp, 0, 0);
             g.Dispose();
