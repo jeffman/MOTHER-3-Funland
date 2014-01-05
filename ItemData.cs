@@ -138,7 +138,7 @@ namespace MOTHER3
             Rom.WriteUShort(this.Sell);
             Rom.WriteByte(this.EquipOwner);
 
-            Rom.SeekAdd(7);
+            Rom.SeekAdd(3);
 
             Rom.WriteInt(this.Hp);
             Rom.WriteShort(this.Pp);
