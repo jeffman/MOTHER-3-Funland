@@ -67,7 +67,7 @@ namespace MOTHER3Funland
             for (int i = 0; i < 3; i++)
                 flags |= (chkLayer[i].Checked ? (1 << i) : 0);
 
-            pMap.Image = MapData.GetMap(cboRoom.SelectedIndex, flags, true);
+            pMap.Image = MapData.GetMap(cboRoom.SelectedIndex, flags, false);
             pMap.Refresh();
         }
 

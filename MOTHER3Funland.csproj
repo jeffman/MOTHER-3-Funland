@@ -150,6 +150,12 @@
     <Compile Include="frmLevelPsiEditor.Designer.cs">
       <DependentUpon>frmLevelPsiEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogoEditor.Designer.cs">
+      <DependentUpon>frmLogoEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,12 @@
     <Compile Include="frmSpriteEditor.Designer.cs">
       <DependentUpon>frmSpriteEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTitleScreenViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTitleScreenViewer.Designer.cs">
+      <DependentUpon>frmTitleScreenViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTownMapEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,12 +218,14 @@
     <Compile Include="MapData.cs" />
     <Compile Include="ModuleArbiter.cs" />
     <Compile Include="MPalette.cs" />
-    <Compile Include="MusicTable.cs" />
+    <Compile Include="MusicPlayerTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsiData.cs" />
     <Compile Include="SerializableDictionary.cs" />
     <Compile Include="ShopData.cs" />
+    <Compile Include="Song.cs" />
+    <Compile Include="SongTable.cs" />
     <Compile Include="SpriteData.cs" />
     <Compile Include="TextProvider.cs" />
     <Compile Include="PalSelector.cs">
@@ -263,6 +277,9 @@
     <EmbeddedResource Include="frmLevelPsiEditor.resx">
       <DependentUpon>frmLevelPsiEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogoEditor.resx">
+      <DependentUpon>frmLogoEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSpriteEditor.resx">
       <DependentUpon>frmSpriteEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTitleScreenViewer.resx">
+      <DependentUpon>frmTitleScreenViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTownMapEditor.resx">
       <DependentUpon>frmTownMapEditor.cs</DependentUpon>

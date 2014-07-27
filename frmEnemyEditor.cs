@@ -34,7 +34,7 @@ namespace MOTHER3Funland
         string[] itemNames = new string[TextItemNames.Entries];
         string[] enemyNames = new string[TextEnemyNames.Entries];
         string[] enemyShortNames = null;
-        string[] musicNames = new string[MusicTable.Entries];
+        string[] musicNames = new string[MusicPlayerTable.Entries];
         string[] actions = new string[ActionTable.Entries];
         string[] battletext = new string[TextBattle.Entries];
 
@@ -286,9 +286,15 @@ namespace MOTHER3Funland
             txtMusicBattle.Text = mb.ToString();
             txtMusicWin.Text = mw.ToString();
 
-            cboMusicSwirl.SelectedIndex = MusicTable.TableLookup[ms];
-            cboMusicBattle.SelectedIndex = MusicTable.TableLookup[mb];
-            cboMusicWin.SelectedIndex = MusicTable.TableLookup[mw];
+            cboMusicSwirl.SelectedIndex =
+                MusicPlayerTable.TableLookup.ContainsKey(ms) ? MusicPlayerTable.TableLookup[ms] : -1;
+
+            cboMusicBattle.SelectedIndex =
+                MusicPlayerTable.TableLookup.ContainsKey(mb) ? MusicPlayerTable.TableLookup[mb] : -1;
+
+            cboMusicWin.SelectedIndex =
+                MusicPlayerTable.TableLookup.ContainsKey(mw) ? MusicPlayerTable.TableLookup[mw] : -1;
+
             loading2 = false;
 
             for (int i = 0; i < 8; i++)
@@ -324,7 +330,7 @@ namespace MOTHER3Funland
             if (loading2) return;
 
             loading2 = true;
-            txtMusicSwirl.Text = MusicTable.MusicTableEntries[cboMusicSwirl.SelectedIndex].Data[1].ToString();
+            txtMusicSwirl.Text = MusicPlayerTable.MusicTableEntries[cboMusicSwirl.SelectedIndex].Data[1].ToString();
             loading2 = false;
         }
 
@@ -336,7 +342,7 @@ namespace MOTHER3Funland
             try
             {
                 int m = int.Parse(txtMusicSwirl.Text);
-                cboMusicSwirl.SelectedIndex = MusicTable.TableLookup[m];
+                cboMusicSwirl.SelectedIndex = MusicPlayerTable.TableLookup[m];
             }
             catch
             {
@@ -349,7 +355,7 @@ namespace MOTHER3Funland
             if (loading2) return;
 
             loading2 = true;
-            txtMusicBattle.Text = MusicTable.MusicTableEntries[cboMusicBattle.SelectedIndex].Data[1].ToString();
+            txtMusicBattle.Text = MusicPlayerTable.MusicTableEntries[cboMusicBattle.SelectedIndex].Data[1].ToString();
             loading2 = false;
         }
 
@@ -361,7 +367,7 @@ namespace MOTHER3Funland
             try
             {
                 int m = int.Parse(txtMusicBattle.Text);
-                cboMusicBattle.SelectedIndex = MusicTable.TableLookup[m];
+                cboMusicBattle.SelectedIndex = MusicPlayerTable.TableLookup[m];
             }
             catch
             {
@@ -374,7 +380,7 @@ namespace MOTHER3Funland
             if (loading2) return;
 
             loading2 = true;
-            txtMusicWin.Text = MusicTable.MusicTableEntries[cboMusicWin.SelectedIndex].Data[1].ToString();
+            txtMusicWin.Text = MusicPlayerTable.MusicTableEntries[cboMusicWin.SelectedIndex].Data[1].ToString();
             loading2 = false;
         }
 
@@ -386,7 +392,7 @@ namespace MOTHER3Funland
             try
             {
                 int m = int.Parse(txtMusicWin.Text);
-                cboMusicWin.SelectedIndex = MusicTable.TableLookup[m];
+                cboMusicWin.SelectedIndex = MusicPlayerTable.TableLookup[m];
             }
             catch
             {

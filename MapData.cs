@@ -170,11 +170,12 @@ namespace MOTHER3
             }
         }
 
+        // Work in progress, ignore this class
         public class RoomSprites
         {
             public static int Address = 0x1132B58;
             public static int Entries = -1;
-            public static RoomSprites[][] Sprites = null;
+            public static List<RoomSprites>[] Sprites = null;
 
             private int room;
             private int index;
@@ -187,21 +188,16 @@ namespace MOTHER3
             public static void Init()
             {
                 Entries = Rom.ReadUShort(Address);
-                Sprites = new RoomSprites[Entries / 5][];
+                Sprites = new List<RoomSprites>[Entries / 5];
 
                 for (int i = 0; i < Sprites.Length; i++)
                 {
-                    int a1 = GetPointer((i * 5) - 1);
-                    int a2 = GetPointer((i * 5));
+                    int pointer = GetPointer((i * 5) + 4);
+                    Sprites[i] = new List<RoomSprites>();
+                    Rom.Seek(pointer);
 
-                    if ((a1 == -1) || (a2 == -1)) continue;
-
-                    int num = (a2 - a1) / 24;
-
-                    Sprites[i] = new RoomSprites[num];
-                    Rom.Seek(a1);
-
-                    for (int j = 0; j < num; j++)
+                    int j = 0;
+                    while((Rom[pointer] & 1) != 0)
                     {
                         var s = new RoomSprites();
                         s.room = i;
@@ -228,7 +224,15 @@ namespace MOTHER3
 
                         Rom.SeekAdd(4);
 
-                        Sprites[i][j] = s;
+                        Sprites[i].Add(s);
+
+                        j++;
+                        pointer += 24;
+                    }
+
+                    if (Sprites[i].Count > 0)
+                    {
+                        var scriptNums = Sprites[i].Select(s => s.Script).ToArray();
                     }
                 }
             }
@@ -367,11 +371,11 @@ namespace MOTHER3
             }
 
             // Draw the sprites
-            /*if (drawsprites)
+            if (drawsprites)
             {
-                for (int i = 0; i < RoomSprites.Sprites[room + 1].Length; i++)
+                for (int i = 0; i < RoomSprites.Sprites[room].Count; i++)
                 {
-                    var rs = RoomSprites.Sprites[room + 1][i];
+                    var rs = RoomSprites.Sprites[room][i];
                     if ((rs.Sprite == 0) || (rs.Sprite == 0xC0)) continue;
 
                     var si = SpriteInfo.InfoEntries[0][rs.Sprite];
@@ -380,7 +384,7 @@ namespace MOTHER3
                         Rom, SpriteGfx.GetPointer(0, rs.Sprite),
                         SpritePalettes.GetPalette(rs.Sprite));
                 }
-            }*/
+            }
 
             bmp.UnlockBits(bd);
             return bmp;

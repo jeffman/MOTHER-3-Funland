@@ -1,5 +1,8 @@
 using System;
+using System.Linq;
 using System.IO;
+using Extensions;
+using System.Drawing;
 
 namespace MOTHER3
 {
@@ -75,11 +78,14 @@ namespace MOTHER3
             GfxBattleBgTable.Init();
             GfxBattleBg.Init();
             GfxTownMaps.Init();
+            GfxLogoTitle.Init();
 
             SpriteData.Init();
 
-            MusicTable.Init();
+            MusicPlayerTable.Init();
             ActionTable.Init();
+
+            SongTable.Init();
 
             return 0;
         }

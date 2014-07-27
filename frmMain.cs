@@ -54,6 +54,7 @@ namespace MOTHER3Funland
             ModuleArbiter.AddModule("Battle BG layer editor", typeof(frmBattleBgLayerEditor));
             ModuleArbiter.AddModule("Battle swirl editor", typeof(frmBattleSwirlEditor));
             ModuleArbiter.AddModule("Town map editor", typeof(frmTownMapEditor));
+            ModuleArbiter.AddModule("Logo editor", typeof(frmLogoEditor));
 
             AddLabel("Text");
             ModuleArbiter.AddModule("Main text viewer", typeof(frmMainTextViewer));

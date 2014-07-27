@@ -230,10 +230,24 @@ namespace Extensions
             }
         }
 
+        public static void Copy8BppTile(this byte[] data, int srcOffset, byte[,] dest, int destX, int destY)
+        {
+            for (int y = destY; y < (destY + 8); y++)
+                for (int x = destX; x < (destX + 8); x++)
+                    dest[x, y] = data[srcOffset++];
+        }
+
         public static byte[,] Read4BppTile(this byte[] data, int srcOffset)
         {
             byte[,] ret = new byte[8, 8];
             Copy4BppTile(data, srcOffset, ret, 0, 0);
+            return ret;
+        }
+
+        public static byte[,] Read8BppTile(this byte[] data, int srcOffset)
+        {
+            byte[,] ret = new byte[8, 8];
+            Copy8BppTile(data, srcOffset, ret, 0, 0);
             return ret;
         }
 

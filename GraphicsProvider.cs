@@ -751,9 +751,6 @@ namespace MOTHER3
                 var pd = new GfxBattleAnimations();
 
                 Rom.Seek(Pointers[i]);
-                if (i == 69)
-                {
-                }
                 pd.index = i;
 
                 pd.GfxEntry = Rom.ReadUShort();
@@ -884,6 +881,7 @@ namespace MOTHER3
                 bg.index = i;
                 bg.GfxEntry = Rom.ReadUShort();
                 bg.ArrEntry = Rom.ReadUShort();
+
                 bg.Palette = Rom.ReadPals(2);
                 bg.PalDir = Rom.ReadUShort();
 
@@ -1269,6 +1267,82 @@ namespace MOTHER3
         {
             int[] palEntry = GetEntry(index);
             return Rom.ReadPals(palEntry[1] >> 5, palEntry[0]);
+        }
+    }
+
+    public class GfxLogoTitle : M3Rom
+    {
+        public static int Address = 0x1BCDD8C;
+        public static int Entries = -1;
+
+        public static void Init()
+        {
+            Entries = Rom.ReadInt(Address);
+        }
+
+        private static int GetPointer(int index)
+        {
+            return Address + Rom.ReadInt(Address + 4 + (index * 4));
+        }
+
+        public static byte[] GetLogoTileset()
+        {
+            byte[] ret = new byte[0x4400];
+            Array.Copy(Rom, GetPointer(0), ret, 0, ret.Length);
+            return ret;
+        }
+
+        public static void SetLogoTileset(byte[] tileset)
+        {
+            Array.Copy(tileset, 0, Rom, GetPointer(0), tileset.Length);
+        }
+
+        public static MPalette GetLogoPalettes()
+        {
+            return Rom.ReadPals(6, GetPointer(1));
+        }
+
+        public static void SetLogoPalettes(MPalette pal)
+        {
+            Rom.WritePal(GetPointer(1), pal);
+        }
+
+        public static ArrEntry[] GetLogoArr(int logoNum)
+        {
+            var ret = new ArrEntry[32 * 32];
+            Rom.Seek(GetPointer(logoNum + 2));
+            for (int i = 0; i < ret.Length; i++)
+                ret[i] = Rom.ReadArrEntry();
+
+            return ret;
+        }
+
+        public static void SetLogoArr(int logoNum, ArrEntry[] arr)
+        {
+            Rom.Seek(GetPointer(logoNum + 2));
+            for (int i = 0; i < arr.Length; i++)
+                Rom.WriteArrEntry(arr[i]);
+        }
+
+        public static byte[] GetTitleTileset()
+        {
+            byte[] ret;
+            LZ77.Decompress(Rom, GetPointer(6), out ret);
+            return ret;
+        }
+
+        public static MPalette GetTitlePal()
+        {
+            return Rom.ReadPals(16, GetPointer(7));
+        }
+
+        public static ArrEntry[] GetTitleArr()
+        {
+            var ret = new ArrEntry[32 * 32];
+            Rom.Seek(GetPointer(8));
+            for (int i = 0; i < ret.Length; i++)
+                ret[i] = Rom.ReadArrEntry();
+            return ret;
         }
     }
 
