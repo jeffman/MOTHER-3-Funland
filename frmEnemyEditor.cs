@@ -350,7 +350,7 @@ namespace MOTHER3Funland
             loading2 = false;
         }
 
-        private void txtMusicBattle_TextChanged(object sender, EventArgs e)
+        private void cboMusicBattle_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (loading2) return;
 
@@ -359,7 +359,7 @@ namespace MOTHER3Funland
             loading2 = false;
         }
 
-        private void cboMusicBattle_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtMusicBattle_TextChanged(object sender, EventArgs e)
         {
             if (loading2) return;
 
@@ -375,7 +375,7 @@ namespace MOTHER3Funland
             loading2 = false;
         }
 
-        private void txtMusicWin_TextChanged(object sender, EventArgs e)
+        private void cboMusicWin_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (loading2) return;
 
@@ -384,7 +384,7 @@ namespace MOTHER3Funland
             loading2 = false;
         }
 
-        private void cboMusicWin_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtMusicWin_TextChanged(object sender, EventArgs e)
         {
             if (loading2) return;
 
