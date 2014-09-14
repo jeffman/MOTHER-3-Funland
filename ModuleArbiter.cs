@@ -144,7 +144,18 @@ namespace MOTHER3Funland
 
         private static M3Form CreateForm(Type frmType)
         {
-            M3Form frm = (M3Form)Activator.CreateInstance(frmType);
+            M3Form frm;
+
+            // Better exception reporting
+            try
+            {
+                frm = (M3Form)Activator.CreateInstance(frmType);
+            }
+            catch (Exception e)
+            {
+                throw e.InnerException;
+            }
+
             Bitmap bmp = GetFormIcon(frmType);
             if (bmp != null) frm.Icon = bmp.ToIcon();
 

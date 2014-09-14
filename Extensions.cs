@@ -455,7 +455,37 @@ namespace Extensions
                 else
                     baseFont = c.Font;
 
-                Font newFont = new Font(new FontFamily("Arial Unicode MS"), baseFont.Size * 1.1f);
+                FontFamily fontFamily = null;
+
+                // List of fonts to try using
+                var fonts = new List<string>()
+                {
+                    "Arial Unicode MS",
+                    "Microsoft JhengHei",
+                    "Unifont"
+                };
+
+                foreach (string family in fonts)
+                {
+                    try
+                    {
+                        fontFamily = new FontFamily(family);
+                    }
+
+                    catch
+                    {
+                        // Font not found, try the next
+                    }
+                }
+
+                // We silently ignored the exceptions from missing fonts, so if fontFamily is still null, we're in trouble
+                if(fontFamily == null)
+                {
+                    throw new Exception("You're missing all of the following fonts, at least one of which is required to display Unicode correctly:"
+                        + Environment.NewLine + Environment.NewLine + string.Join(Environment.NewLine, fonts));
+                }
+
+                Font newFont = new Font(fontFamily, baseFont.Size * 1.1f);
 
                 if (c is ComboSearch)
                     ((ComboSearch)c).SetFont(newFont);
