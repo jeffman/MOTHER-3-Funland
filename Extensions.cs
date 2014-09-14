@@ -470,6 +470,7 @@ namespace Extensions
                     try
                     {
                         fontFamily = new FontFamily(family);
+                        break;
                     }
 
                     catch
@@ -479,7 +480,7 @@ namespace Extensions
                 }
 
                 // We silently ignored the exceptions from missing fonts, so if fontFamily is still null, we're in trouble
-                if(fontFamily == null)
+                if (fontFamily == null)
                 {
                     throw new Exception("You're missing all of the following fonts, at least one of which is required to display Unicode correctly:"
                         + Environment.NewLine + Environment.NewLine + string.Join(Environment.NewLine, fonts));
