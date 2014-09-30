@@ -382,16 +382,20 @@ namespace MOTHER3
                     break;
 
                 case TextType.EnglishShort:
+                case TextType.EnglishShortRaw:
+
+                    bool obfuscated = texttype == TextType.EnglishShort;
+
                     for (int i = 0; i < length; i++)
                     {
-                        byte ch = Rom.DecodeByte(offset);
+                        byte ch = Rom.DecodeByte(offset, obfuscated);
 
                         // Check for control codes
                         if (ch == 0xEF)
                         {
                             // EF is a custom control code
                             ret += "[EF";
-                            ret += Rom.DecodeByte(offset + 1).ToString("X2") + "]";
+                            ret += Rom.DecodeByte(offset + 1, obfuscated).ToString("X2") + "]";
                             offset++;
                         }
 
@@ -408,7 +412,7 @@ namespace MOTHER3
                             int cclen = ch & 0xF;
 
                             // Get the control byte
-                            byte ccbyte = Rom.DecodeByte(offset + 1);
+                            byte ccbyte = Rom.DecodeByte(offset + 1, obfuscated);
                             bool doNewLine = ((ccbyte == 0x01) || (ccbyte == 0x32) || (ccbyte == 0x03));
 
                             // Print the result
@@ -417,7 +421,7 @@ namespace MOTHER3
                             // Get the arguments
                             ushort[] args = new ushort[cclen];
                             for (int j = 0; j < cclen; j++)
-                                ret += " " + Rom.DecodeUShort(offset + 2 + (j << 1)).ToString("X4");
+                                ret += " " + Rom.DecodeUShort(offset + 2 + (j << 1), obfuscated).ToString("X4");
 
                             ret += "]";
 
@@ -632,7 +636,7 @@ namespace MOTHER3
             int a = Address + 12 + (index << 1);
 
             int addr = Rom.ReadUShort(a);
-            if (Version == RomVersion.English)
+            if (Version != RomVersion.Japanese)
                 addr <<= 1;
 
             addr += Address;
@@ -700,7 +704,7 @@ namespace MOTHER3
             int a = Address + 12 + (index << 1);
 
             int addr = Rom.ReadUShort(a);
-            if (Version == RomVersion.English)
+            if (Version != RomVersion.Japanese)
                 addr <<= 1;
 
             addr += Address;
@@ -874,8 +878,25 @@ namespace MOTHER3
             int addr = Rom.ReadUShort(a + (line << 1));
             addr += a + (Lines[room] << 1);
 
-            return TextProvider.GetText(addr, 0x7FFFFFFF,
-                (M3Rom.Version == RomVersion.Japanese ? TextType.Japanese : TextType.EnglishShort), false);
+            TextType tt;
+
+            switch (M3Rom.Version)
+            {
+                case RomVersion.Japanese:
+                default:
+                    tt = TextType.Japanese;
+                    break;
+
+                case RomVersion.English:
+                    tt = TextType.EnglishShort;
+                    break;
+
+                case RomVersion.Englishv12:
+                    tt = TextType.EnglishShortRaw;
+                    break;
+            }
+
+            return TextProvider.GetText(addr, 0x7FFFFFFF, tt, false);
         }
     }
 
@@ -937,7 +958,8 @@ namespace MOTHER3
     {
         Japanese,
         EnglishWide,
-        EnglishShort
+        EnglishShort,
+        EnglishShortRaw
     }
 }
 

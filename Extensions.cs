@@ -22,9 +22,11 @@ namespace Extensions
             Offset += offset;
         }
 
-        public static byte DecodeByte(this byte[] rom, int offset)
+        public static byte DecodeByte(this byte[] rom, int offset, bool obfuscated)
         {
             byte ch = rom[offset];
+            if (!obfuscated) return ch;
+
             if ((offset & 1) == 0)
             {
                 // Even
@@ -44,9 +46,9 @@ namespace Extensions
             return ch;
         }
 
-        public static ushort DecodeUShort(this byte[] rom, int offset)
+        public static ushort DecodeUShort(this byte[] rom, int offset, bool obfuscated)
         {
-            return (ushort)(DecodeByte(rom, offset) + (DecodeByte(rom, offset + 1) << 8));
+            return (ushort)(DecodeByte(rom, offset, obfuscated) + (DecodeByte(rom, offset + 1, obfuscated) << 8));
         }
 
         public static byte ReadByte(this byte[] rom)

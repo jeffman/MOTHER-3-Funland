@@ -41,7 +41,21 @@ namespace MOTHER3
                 return -4;
 
             IsLoaded = true;
-            Version = (Rom[0x124C18] == 0x9C) ? RomVersion.English : RomVersion.Japanese;
+
+            switch (Rom[0x124C18])
+            {
+                case 0x9C:
+                    Version = RomVersion.English;
+                    break;
+
+                case 0x1C:
+                    Version = RomVersion.Englishv12;
+                    break;
+
+                default:
+                    Version = RomVersion.Japanese;
+                    break;
+            }
 
             if (Rom[0x1DB4] == 0x73)
             {
@@ -94,7 +108,8 @@ namespace MOTHER3
     public enum RomVersion
     {
         Japanese,
-        English
+        English,
+        Englishv12
     }
 }
 
